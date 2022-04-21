@@ -1,0 +1,31 @@
+table {
+    margin-top:200px;
+    width: 800px;  
+    height: auto; 
+    margin: auto; 
+}
+.table-header{
+    background-color:rgb(243, 223, 55);
+    border: 2px solid rgb(243, 223, 55);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 5px;
+    width: 180px;
+    height: 45px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center; 
+    border: 1px solid white;
+}
+.background-picture {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+

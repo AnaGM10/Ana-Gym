@@ -1,0 +1,17 @@
+<div>
+    <img class="background-picture" src="/assets/img/registration-background.png" alt="">
+</div>
+<div class = "container">
+    <form [formGroup]="logInForm" (ngSubmit)="readAllUsers()">   
+        <div class="mb-3 form-group">
+            <label for="username" class="form-label">UserName</label>
+            <input type="text" class="form-control" formControlName="username" id="img" aria-describedby="username">
+        </div>
+        <div class="mb-3 form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" formControlName="password" id="img" aria-describedby="password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-style">Log In</button>
+        <button  class="btn btn-primary btn-style"routerLink="/register" >Register</button>
+    </form>
+</div>

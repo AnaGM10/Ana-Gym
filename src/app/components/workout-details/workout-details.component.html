@@ -1,0 +1,20 @@
+<div>
+  <img
+    class="background-picture"
+    src="assets/img/workout-background.jpeg"
+    alt=" workout girl"
+  />
+</div>
+
+<div>
+  <button class="btn btn-back btn-sm">
+    <a class="btn-back" routerLink="/workouts">
+      <img class="back-icon" src="/assets/img/back.png" alt="" /> Back to
+      Workouts
+    </a>
+  </button>
+</div>
+
+<div class="container-detail" *ngFor="let detail of workoutDetail">
+  <img src="{{ detail.gifUrl }}" />
+</div>

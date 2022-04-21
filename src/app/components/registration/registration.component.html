@@ -1,0 +1,20 @@
+<div>
+    <img class="background-picture" src="/assets/img/registration-background.png" alt="">
+</div>
+<div class = "container">
+    <form [formGroup]="userRegistrationForm" (ngSubmit)="addUser(userRegistrationForm)">        
+        <div class="mb-3 form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" formControlName="name" id="continut"  aria-describedby="name">
+        </div>
+        <div class="mb-3 form-group">
+            <label for="username" class="form-label">UserName</label>
+            <input type="text" class="form-control" formControlName="username" id="img" aria-describedby="username">
+        </div>
+            <div class="mb-3 form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password" id="img" aria-describedby="password">
+            </div>
+        <button type="submit" class="btn btn-primary btn-style">Register</button>
+    </form>
+</div>

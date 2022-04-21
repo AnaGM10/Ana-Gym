@@ -1,0 +1,115 @@
+<div>
+  <img
+    class="background-picture"
+    src="assets/img/shop3-background.jpeg"
+    alt=""
+  />
+</div>
+
+<!-- <div class="content" >
+<div class="container content-section">
+    <h1 class="section-header">Gear</h1>
+    <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">T-Shirt</span>
+            <img class="shop-item-image" src="/assets/img/t-shirt.jpeg" width="200" alt="">
+          <div class="shop-item-details">
+            <span class="shop-item-price">10.99€</span>
+            <button class=" btn btn-primary shop-item-button" type="button"> Add to Cart</button>
+          </div>
+        </div>
+    <div class="shop-item">
+      <span class="shop-item-title">Bag </span>
+          <img class="shop-item-image" src="/assets/img/gym-bag.jpeg" width="200" alt="">
+        <div class="shop-item-details">
+          <span class="shop-item-price">29.99€</span>
+          <button class=" btn btn-primary shop-item-button"type="button"> Add to Cart</button>
+        </div>
+      </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Mat</span>
+      <img class="shop-item-image" src="/assets/img/mat.jpeg" width="200" alt="">
+    <div class="shop-item-details">
+      <span class="shop-item-price">19.99€</span>
+      <button class=" btn btn-primary shop-item-button" type="button"> Add to Cart</button>
+    </div>
+    </div>
+  <div class="shop-item">
+  <span class="shop-item-title">Towel</span>
+    <img class="shop-item-image" src="/assets/img/cool-towel.jpeg" width="200" alt="">
+    <div class="shop-item-details">
+      <span class="shop-item-price">12.99€</span>
+      <button class=" btn btn-primary shop-item-button" type="button"> Add to Cart</button>
+    </div>
+  </div> 
+</div>
+</div>
+
+<div class="container content-section">
+    <h1 class="section-header">Merch</h1>
+    <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">  Cup  </span> 
+          <img  class="shop-item-image" src="/assets/img/coffe-cup.jpeg" width="200" alt="">
+            <div class="shop-item-details">
+              <span class="shop-item-price">5.99€</span>
+              <button class=" btn btn-primary shop-item-button"  type ="button"> Add to Cart</button>
+            </div>
+      </div>
+    <div class="shop-item" >
+      <span class="shop-item-title">Bottle</span>
+      <img class="shop-item-image" src="/assets/img/bottle.jpeg" width="200" alt="">
+    <div class="shop-item-details">
+      <span class="shop-item-price">5.99€</span>
+      <button class=" btn btn-primary shop-item-button"  type ="button"> Add to Cart</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container content-section" >
+    <h2 class="section-header" >Cart</h2>
+    <div class="cart-row" >
+      <span class="cart-item cart-header cart-column">Item</span> 
+    
+    </div>
+
+    <div class="cart-items" >
+    </div>
+    
+    <div class="cart-total" >
+        <strong class="cart-total-title">Total</strong>
+        <Span class="cart-total-price">€0</Span>
+    </div>
+  <button  class="btn btn-primary btn-purchase" type="button">Purchase</button>
+</div>
+</div> -->
+
+<div class="container">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/cart">Shopping Cart</a>
+    <a routerLink="/cart">
+      <i class="fa fa-cart-arrow-down" aria-hidden="true">
+        <span class="cart">
+          {{ itemInCart }}
+        </span>
+      </i>
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4" *ngFor="let product of products">
+    <div class="card">
+      <a [routerLink]="['/shop-gear', product.id]">
+        <img [src]="product.imgUrls[0]" alt="" class="img" />
+        <h3 class="card-title">
+          {{ product.name }}
+        </h3>
+        <h5 class="card-title">
+          {{ product.price | currency: "RON" }}
+        </h5>
+      </a>
+    </div>
+  </div>
+</div>

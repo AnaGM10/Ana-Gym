@@ -1,0 +1,36 @@
+.background-picture {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.container-detail {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 100px;
+  transform: translate(-50%, -50%);
+  & img {
+    border-radius: 20px;
+  }
+}
+
+.btn-back {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 20px;
+  background-color: rgb(243, 223, 55);
+  color: grey;
+  box-shadow: none;
+}
+.back-icon {
+  height: 20px;
+  margin-left: -20px;
+}

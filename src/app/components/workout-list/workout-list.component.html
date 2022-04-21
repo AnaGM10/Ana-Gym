@@ -1,0 +1,36 @@
+<div >
+    <img class="background-picture"  src="assets/img/workout-background.jpeg" alt=" workout girl">
+</div>
+<div>
+    <button class="btn btn-back  btn-sm"> 
+        <a class="btn-back" routerLink="/workouts">
+            <img class="back-icon" src="/assets/img/back.png" alt=""> Back to Workouts
+        </a>
+    </button>
+</div>
+<div class="list-style">
+    <div class="workouts">
+        <form (ngSubmit)="addWorkout()">
+            <input 
+                type="text" 
+                name="inputWorkout"
+                placeholder="Enter workout..."
+                class="list-input"
+                [(ngModel)]="inputWorkout"
+            />
+            <input 
+                type="submit"
+                value="Add Workout"
+                class="list-submit"
+            />
+        </form>
+        <div 
+            *ngFor=" let workout  of workouts; let i = index; "  
+            class="list {{ (workout.completed ? 'done' : '') }}" >
+            <div class="id" > {{ i +1}}.</div>
+            <div class="content" >{{workout.content}}</div>
+            <button class="btn btn-done  btn-sm" (click)="toggleDone(i)">Done</button>
+            <button class="btn-delete btn btn-danger  btn-sm" (click)="deleteWorkout(i)">Remove</button>
+        </div>
+    </div>
+</div>

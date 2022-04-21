@@ -1,0 +1,32 @@
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.brand-color {
+    color:rgb(243, 223, 55);
+}
+.links{
+    margin-left: auto;
+    padding: 20px 0px 0px 0px;
+    white-space: nowrap;
+}
+.link-color:hover{
+    color: gray;    
+}
+.link-color {
+    color: white;
+    font-size:1.5em;
+    font-weight: 1800;
+    font-family:sans-serif;
+    justify-content: space-evenly ;
+    padding-right: 30px;
+    
+}
+.btn {
+    background-color:rgb(243, 223, 55);
+    color:grey;
+    box-shadow: none;
+}

@@ -1,0 +1,33 @@
+<div >
+  <img class="background-picture"  src="/assets/img/nutrition-background.jpeg" alt=" workout girl">
+</div>
+<div class="table-header">
+  <h1 >Member History</h1>
+</div>
+<div> 
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="memberNr">
+        <th mat-header-cell *matHeaderCellDef>  MemberID </th>
+        <td mat-cell *matCellDef="let member"> {{member.memberNr}} </td>
+      </ng-container>
+      <ng-container matColumnDef="membership">
+        <th mat-header-cell *matHeaderCellDef> Membership Type  </th>
+        <td mat-cell *matCellDef="let member"> {{member.membership}} </td>
+      </ng-container>
+      <ng-container matColumnDef="startData">
+        <th mat-header-cell *matHeaderCellDef> Start Date</th>
+        <td mat-cell *matCellDef="let member"> {{member.startData}} </td>
+      </ng-container>
+      <ng-container matColumnDef="expirationData">
+          <th mat-header-cell *matHeaderCellDef> Expiration Date </th>
+          <td mat-cell *matCellDef="let member"> {{member.expirationData}} </td>
+      </ng-container>
+      <ng-container matColumnDef="payment">
+        <th mat-header-cell *matHeaderCellDef> Payment </th>
+        <td mat-cell *matCellDef="let member"> {{member.payment}}</td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>  
+</div>
+    

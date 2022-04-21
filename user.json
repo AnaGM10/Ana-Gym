@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "name": "alin",
+      "username": "aling",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "123",
+      "username": "1",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "11",
+      "username": "11",
+      "password": "11",
+      "id": 6
+    },
+    {
+      "name": "h",
+      "username": "h",
+      "password": "h",
+      "id": 7
+    },
+    {
+      "name": "Ana",
+      "username": "Ana1",
+      "password": "ana1",
+      "id": 8
+    },
+    {
+      "name": "Ana",
+      "username": "Ana10",
+      "password": "ana10",
+      "id": 9
+    },
+    {
+      "name": "Ana",
+      "username": "Ana10",
+      "password": "Ana10",
+      "id": 10
+    },
+    {
+      "name": "Ana",
+      "username": "Ana",
+      "password": "Ana",
+      "id": 11
+    }
+  ],
+  "members": [
+    {
+      "memberNr": "102044",
+      "membership": "1 Year",
+      "startData": "Ded.20.2019",
+      "expirationData": "Dec.20.2021",
+      "payment": "half"
+    },
+    {
+      "memberNr": "102044",
+      "membership": "6 Months",
+      "startData": "Sept.20.2019",
+      "expirationData": "March.20.2019",
+      "payment": "in full"
+    },
+    {
+      "memberNr": "102044",
+      "membership": "3 Months",
+      "startData": "Nov.20.2018",
+      "expirationData": "January.20.2019",
+      "payment": "in full"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Test"
+  }
+}
